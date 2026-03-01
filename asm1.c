@@ -165,12 +165,14 @@ void chucNang6_VayTraGop()
 
     for (int i = 1; i <= 12; i++)
     {
+        // lai tinh tren du no
         float laiThang = tienVay * lai;
         float tong = gocHangThang + laiThang;
 
         printf("Thang %d: Goc=%.0f Lai=%.0f Tong=%.0f\n",
                i, gocHangThang, laiThang, tong);
 
+        //sau moi thang giam tien no
         tienVay -= gocHangThang;
     }
 }
